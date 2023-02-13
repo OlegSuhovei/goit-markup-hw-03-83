@@ -52,7 +52,7 @@ p {
   margin: 0;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -110,6 +110,9 @@ p {
 /* Логотип */
 
 .header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+
   font-family: var(--logo-font);
   font-weight: 800;
   font-size: 18px;
@@ -117,8 +120,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin-right: 76px;
-  padding: 24px 0;
 }
 
 .logo {
@@ -128,26 +129,20 @@ p {
 /* Навигация */
 
 .heder-list {
-  color: var(--secondary-text-color);
-
   display: flex;
   gap: 40px;
+
+  color: var(--secondary-text-color);
 }
 
-.header-contacts {
-  margin-left: auto;
-}
+.header-link {
+  display: block;
+  padding: 24px 0;
 
-.heder-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.header-link.link {
-  display: block;
-  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -161,11 +156,16 @@ p {
 
 /* Контакты */
 
+.header-contacts {
+  margin-left: auto;
+}
+
 .contact {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -174,37 +174,41 @@ p {
 /* секция Герой */
 
 .hero {
-  background-color: var(--hero-background-color);
   padding-top: 188px;
   padding-bottom: 188px;
+
   text-align: center;
+  background-color: var(--hero-background-color);
 }
 
 .hero-title {
+  margin: 0 auto;
+  max-width: 496px;
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
 }
 
 .hero-btn {
+  padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
+
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--title-text-color);
   letter-spacing: 0.04em;
+  color: var(--title-text-color);
+
   background-color: var(--primary-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 169px;
-  min-height: 56px;
-  padding: 16px 32px;
   border: 0px;
 }
 
@@ -234,42 +238,40 @@ p {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
+  --items: 4;
 }
-
 .benefits-item {
-  max-width: 264px;
-  margin-right: 24px;
-}
-
-.benefits-item:last-child {
-  margin-right: 0;
+  width: 264px;
 }
 
 .benefits-name {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-bottom: 8px;
 }
 
 .benefits-text {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 /* секция Наш сервис */
 
 .services-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 72px;
+  color: var(--secondary-text-color);
 }
 
 /* секция Наша команда */
@@ -279,13 +281,14 @@ p {
 }
 
 .team-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 72px;
+  color: var(--secondary-text-color);
 }
 
 .team-list {
@@ -297,19 +300,16 @@ p {
   padding-bottom: 32px;
 }
 
-.team-img {
-  margin-bottom: 32px;
-}
-
 .team-name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 8px;
-  padding: 0 16px;
+  color: var(--secondary-text-color);
 }
 
 .team-text {
@@ -317,15 +317,15 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding: 0 16px;
 }
 
 /* Подвал */
 
 .page-footer {
-  background-color: var(--hero-background-color);
   padding-top: 100px;
   padding-bottom: 100px;
+
+  background-color: var(--hero-background-color);
 }
 
 .footer-logo {
@@ -339,12 +339,13 @@ p {
 }
 
 .footer-text {
+  max-width: 264px;
+  margin-top: 16px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-  max-width: 264px;
-  margin-top: 16px;
 }
 
 /* секция Портфолио */
@@ -356,11 +357,12 @@ p {
 }
 
 .portfolio-buttons {
+  margin-bottom: 72px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--indent);
-  margin-bottom: 72px;
 }
 
 .button {
@@ -370,15 +372,14 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
   color: var(--primary-background-color);
 
   background-color: var(--team-background-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  text-align: center;
   min-height: 48px;
   padding: 12px 24px;
-  border: 0;
 }
 
 .btn-active {
@@ -403,24 +404,22 @@ p {
   --indent: 48px 24px;
 }
 
-.portfolio-img {
-  display: block;
-}
-
 .porfolio-card-content {
+  padding: 32px 16px;
+
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
-  padding: 32px 16px;
 }
 
 .portfolio-title {
+  margin-bottom: 08px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-bottom: 08px;
 }
 
 .portfolio-text {
