@@ -296,8 +296,11 @@ img {
 }
 
 .team-item {
-  background-color: var(--page-background-color);
   padding-bottom: 32px;
+
+  background-color: var(--page-background-color);
+  border-radius: 0px 0px 4px 4px;
+  
 }
 
 .team-name {
@@ -393,6 +396,7 @@ img {
 .button:focus {
   color: var(--title-text-color);
   background-color: var(--accent-background-color);
+  border-color: transparent;
 }
 
 /* Наши работы */
